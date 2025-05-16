@@ -1,0 +1,11 @@
+{
+  "name": "base-styles-test",
+  "version": "1.0.0",
+  "description": "Test whether Gutenberg's base styles can be used with the latest Sass.",
+  "scripts": {
+    "build": "sass main.scss:main.css --no-source-map"
+  },
+  "devDependencies": {
+    "sass": "^1.89.0"
+  }
+}

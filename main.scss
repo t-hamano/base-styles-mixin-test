@@ -1,0 +1,162 @@
+// @use "../../packages/base-styles/animations";
+// @use "../../packages/base-styles/variables";
+// @use "../../packages/base-styles/z-index";
+// @use "../../packages/base-styles/functions";
+// @use "../../packages/base-styles/long-content-fade";
+@use "../../packages/base-styles/mixins";
+
+// .test-animation {
+// 	@include animations.animation__fade-in();
+// }
+
+// .test-variables {
+// 	font-size: variables.$font-size-x-small;
+// }
+
+// .test-z-index {
+// 	z-index: z-index.z-index(".edit-site-page-header");
+// }
+
+/*
+ * This function uses color.{red|green|blue}, which will cause an error when compiling.
+ * After the entire Gutenberg project is migrated to Dart Sass, we will need to update
+ * this function to use color.channel().
+ */
+// .test-functions {
+// 	color: functions.hex-to-rgb(#f00);
+// }
+
+// .test-long-content-fade {
+// 	@include long-content-fade.long-content-fade();
+// }
+
+/*
+ * These mixins should work when only the mixin is imported.
+ */
+.test-mixins {
+	@include mixins.admin-scheme(#f00);
+}
+
+.test-heading-small {
+	@include mixins.heading-small();
+}
+
+.test-heading-medium {
+	@include mixins.heading-medium();
+}
+
+.test-breakpoint-medium {
+	@include mixins.break-medium {
+		font-size: 30px;
+	}
+}
+
+.test-breakpoint-break-zoomed-in {
+	@include mixins.break-zoomed-in {
+		font-size: 40px;
+	}
+}
+
+.test-block-toolbar-button-style__focus {
+	@include mixins.block-toolbar-button-style__focus();
+}
+
+.test-input-style__neutral {
+	@include mixins.input-style__neutral();
+}
+
+.test-input-style__focus {
+	@include mixins.input-style__focus();
+}
+
+.test-button-style__focus {
+	@include mixins.button-style__focus();
+}
+
+.test-button-style-outset__focus {
+	@include mixins.button-style-outset__focus(#f00);
+}
+
+.test-editor-left {
+	@include mixins.editor-left(".test-editor-left");
+}
+
+.test-caption-style {
+	@include mixins.caption-style();
+}
+
+.test-caption-style-theme {
+	@include mixins.caption-style-theme();
+}
+
+.test-reduce-motion {
+	@include mixins.reduce-motion();
+}
+
+.test-reduce-motion-transition {
+	@include mixins.reduce-motion("transition");
+}
+
+.test-reduce-motion-animation {
+	@include mixins.reduce-motion("animation");
+}
+
+.test-input-control {
+	@include mixins.input-control();
+}
+
+.test-checkbox-control {
+	@include mixins.checkbox-control();
+}
+
+.test-radio-control {
+	@include mixins.radio-control();
+}
+
+.test-reset {
+	@include mixins.reset();
+}
+
+.test-link-reset {
+	@include mixins.link-reset();
+}
+
+.test-editor-input-reset {
+	@include mixins.editor-input-reset();
+}
+
+.test-wp-admin-reset {
+	@include mixins.wp-admin-reset(".edit-site");
+}
+
+.test-admin-scheme {
+	@include mixins.admin-scheme(#f00);
+}
+
+.test-wordpress-admin-schemes {
+	@include mixins.wordpress-admin-schemes();
+}
+
+.test-background-colors-deprecated {
+	@include mixins.background-colors-deprecated();
+}
+
+.test-foreground-colors-deprecated {
+	@include mixins.foreground-colors-deprecated();
+}
+
+.test-gradient-colors-deprecated {
+	@include mixins.gradient-colors-deprecated();
+}
+
+.test-custom-scrollbars-on-hover {
+	@include mixins.custom-scrollbars-on-hover(#f00, #0f0);
+}
+
+.test-selected-block-outline {
+	@include mixins.selected-block-outline(2);
+}
+
+.test-selected-block-focus {
+	@include mixins.selected-block-focus(2);
+}
