@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "Test whether Gutenberg's base styles can be used with the latest Sass.",
   "scripts": {
-    "build": "sass main.scss:main.css --no-source-map"
+    "build": "sass src/main.scss:build/main.css --no-source-map",
+    "watch:js": "wp-scripts start",
+    "build:js": "wp-scripts build"
   },
   "devDependencies": {
+    "@wordpress/scripts": "^30.16.0",
     "sass": "^1.89.0"
   }
 }

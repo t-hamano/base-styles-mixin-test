@@ -7,5 +7,8 @@ cd /path/to/gutenberg/perf-envs
 git clone https://github.com/t-hamano/base-styles-mixin-test.git
 cd base-styles-mixin-test
 npm install
+
 npm run build
+npm run watch:js
+npm run build:js
 ```

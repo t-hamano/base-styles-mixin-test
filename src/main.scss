@@ -1,9 +1,9 @@
-// @use "../../packages/base-styles/animations";
-// @use "../../packages/base-styles/variables";
-// @use "../../packages/base-styles/z-index";
-// @use "../../packages/base-styles/functions";
-// @use "../../packages/base-styles/long-content-fade";
-@use "../../packages/base-styles/mixins";
+// @use "../../../packages/base-styles/animations";
+// @use "../../../packages/base-styles/variables";
+// @use "../../../packages/base-styles/z-index";
+// @use "../../../packages/base-styles/functions";
+// @use "../../../packages/base-styles/long-content-fade";
+@use "../../../packages/base-styles/mixins";
 
 // .test-animation {
 // 	@include animations.animation__fade-in();
